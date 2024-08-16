@@ -5,10 +5,6 @@ import (
 	"strings"
 )
 
-type IBiodataRepository interface {
-	DataBiodata(name string) (category []entity.Biodata)
-}
-
 func DataBiodata(name string) (bio entity.Biodata) {
 	dataBio := []entity.Biodata{
 		{Id: 0, Nama: "Thomas", Alamat: "Kota A", Pekerjaan: "Programmer", Alasan: "Alasan Thomas"},
